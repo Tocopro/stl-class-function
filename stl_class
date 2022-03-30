@@ -1,0 +1,20 @@
+#include <iostream>
+#include <vector>
+#include <iterator>
+using  namespace std;
+
+class FunctionObj
+{
+public:
+    int operator()(int x, int y)
+    {
+        return  x * y;
+    }
+};
+int main()
+{
+    FunctionObj fo;
+    int multi = fo(4, 7);
+    cout << "Multiplication of x and y = " << multi;
+    return 0;
+}
